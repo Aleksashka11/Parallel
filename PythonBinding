@@ -6,9 +6,10 @@ pybind11_add_module(module_name Lab3_Parallel.cpp)
 
 //Lab3_Parallel.cpp add
 #include <pybind11/embed.h>
-PYBIND11_MODULE(example, m) {
-    m.doc() = "pybind11 example plugin"; // optional module docstring
-    m.def("multiply", &multiply, "A function which multiplies two numbers");
+
+PYBIND11_MODULE(module, handle){
+    handle.doc = "Counting Pixels";
+    handle.def("channel_pixels_calc");
 }
 
 //install pybind11
