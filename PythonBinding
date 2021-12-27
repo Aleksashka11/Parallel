@@ -1,0 +1,12 @@
+//cmakefile.txt content
+cmake_minimum_required(VERSION 3.4)
+project(Lab3_Parallel)
+add_subdirectory(pybind11)
+pybind11_add_module(module_name Lab3_Parallel.cpp)
+
+//Lab3_Parallel.cpp add
+#include <pybind11/embed.h>
+PYBIND11_MODULE(example, m) {
+    m.doc() = "pybind11 example plugin"; // optional module docstring
+    m.def("multiply", &multiply, "A function which multiplies two numbers");
+}
