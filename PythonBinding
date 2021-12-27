@@ -10,3 +10,6 @@ PYBIND11_MODULE(example, m) {
     m.doc() = "pybind11 example plugin"; // optional module docstring
     m.def("multiply", &multiply, "A function which multiplies two numbers");
 }
+
+//install pybind11
+pip3 install pybind11
