@@ -7,12 +7,11 @@
 #include <opencv2/imgproc.hpp>
 #include <chrono>	
 #include <typeinfo>
-#include "lab3.h"
-//#include <cuda.h>
-//#include <opencv2/core/cuda.hpp>
-//#include "cuda_runtime.h"
-//#include <cuda/std/atomic>
-//#include "Lab3_Parallel.cu"
+#include <cuda.h>
+#include <opencv2/core/cuda.hpp>
+#include "cuda_runtime.h"
+#include <cuda/std/atomic>
+#include "Lab3_Parallel.cu"
 
 
 
